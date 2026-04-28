@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+<img width="781" height="690" alt="image" src="https://github.com/user-attachments/assets/377ec938-423e-4f54-a0c5-0dcf68e337cc" />
+
+# Introduction to Programming Languages
+
+* The project created is a chat application with a fully functional PostgreSQL database.
+
