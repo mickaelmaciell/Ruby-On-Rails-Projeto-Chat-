@@ -9,7 +9,9 @@
         <p><%= "From: " + blog_post.user.email %></p>
         <p><%= "To: " + blog_post.receiver&.email.to_s %></p>
         <div>
-            <%= link_to "Edit", edit_blog_post_path(blog_post) %>
+            <% if blog_post.user == current_user %>
+                <%= link_to "Edit", edit_blog_post_path(blog_post)%>
+            <% end %>
         </div>
     </div>
         
