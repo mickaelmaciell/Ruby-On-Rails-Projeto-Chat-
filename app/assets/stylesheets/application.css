@@ -8,3 +8,139 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+/* Estilos Customizados Slim */
+
+/* Estilo Global Roxo Slim - Sem mudar o HTML */
+
+body {
+  background-color: #0f172a; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  color: #e9d5ff;
+}
+
+/* Títulos */
+h1 {
+  color: #a855f7;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #3b0764;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+h2, h2 a {
+  color: #d8b4fe !important;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Caixas de conteúdo e Formulários */
+div, form {
+  background-color: #2e1a47;
+  color: #e9d5ff;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* Ajuste para não criar caixas infinitas dentro de caixas */
+div div, form div {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  box-shadow: none;
+}
+
+/* Campos de entrada (Inputs, Textarea, Select) */
+input[type="text"], 
+textarea, 
+select {
+  width: 100%;
+  background-color: #1a0b2e;
+  border: 1px solid #4b2c73;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #a855f7;
+}
+
+/* Botões e Links de ação */
+button, 
+input[type="submit"],
+a {
+  color: #bb86fc;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button, input[type="submit"] {
+  background-color: #7c4dff;
+  color: white !important;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #9d72e2;
+}
+
+/* Textos menores e labels */
+p, small, label {
+  color: #c084fc;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  display: block;
+}
+
+strong {
+  color: #d8b4fe;
+}
+/* Estilizando especificamente as caixas de texto e áreas de digitação */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea, 
+select {
+  width: 100%;
+  background-color: #1a0b2e !important; /* Roxo bem escuro para o fundo do campo */
+  border: 1px solid #4b2c73 !important; /* Borda sutil */
+  color: #ffffff !important;           /* Letra branca ao digitar */
+  padding: 12px !important;
+  border-radius: 8px !important;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  display: block;
+  box-sizing: border-box; 
+  font-family: inherit;
+}
+
+/* Efeito de brilho ao clicar na caixa para digitar */
+input:focus, textarea:focus, select:focus {
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.4);
+  outline: none;
+}
+
+/* Ajuste específico para o tamanho da caixa de mensagem */
+textarea {
+  min-height: 120px;
+  resize: vertical; /* Permite aumentar a altura manualmente */
+}

@@ -1,0 +1,30 @@
+<h1>My chat</h1>
+
+<h2>History:</h2>
+
+<% @blog_posts.each do |blog_post| %>
+    <div>
+        <h2><%#= link_to blog_post.title, blog_post %></h2>
+        <%= blog_post.body %>
+        <p><%= "From: " + blog_post.user.email %></p>
+        <p><%= "To: " + blog_post.receiver&.email.to_s %></p>
+        <div>
+            <%= link_to "Edit", edit_blog_post_path(blog_post) %>
+        </div>
+    </div>
+        
+<%# 
+    <div>
+        <p><strong>History:</strong></p>
+        <%= render partial: "message", locals: { message: blog_post } %>
+        <%#
+    </div>
+%>
+<% end %>
+
+    <h2 >Users</h2>
+        <% User.all.each do |user| %>
+         <p>
+            <%= user.email %> 
+         </p>
+<% end %>

@@ -1,0 +1,7 @@
+<div>
+  <small>
+    <strong>From:</strong> <%= message.user.email %> | 
+    <strong>To:</strong> <%= message.receiver&.email %>
+  </small>
+  <p><%= message.body %></p>
+</div>
